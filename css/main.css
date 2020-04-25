@@ -98,6 +98,11 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* ==========================================================================
+   Base Styles
+   ========================================================================== */
+
+
    .content-wrapper {
      width: 90%;
      margin: 50px 0;
@@ -220,12 +225,12 @@ aside {
   margin-bottom: 60px;
 }
 
-features article {
+.features article {
   width: 63%;
   margin: 30px 0;
 }
 
-.features-items {
+.features .features-items {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,16 +409,19 @@ features article {
 
    @media only screen and (min-width: 768px) {
    /*Tablet styles here*/
-   /* TABLET Base - Header - Footer Styles */
+
+   /* TABLET Base Styles */
 
    .content-wrapper {
      max-width: 640px;
      margin: 100px 0;
    }
 
+   /* TABLET Header - Footer Styles */
+
    header {
      justify-content: space-around;
-     padding: 33px;
+     padding: 33px 0;
    }
 
    header .content-wrapper {
@@ -450,7 +458,6 @@ features article {
   footer .copyright {
     width: 100%;
   }
-   }
 
    /* TABLET Newsletter Signup Styles */
 
@@ -478,7 +485,7 @@ features article {
    }
 
    .features .features-item-description {
-     width: 50%;
+     width: 62%;
    }
 
    /* TABLET Reviews Style */
@@ -492,6 +499,7 @@ features article {
    }
 
    /* TABLET FAQ Page Styles */
+
    .faq .content-wrapper {
         justify-content: space-between;
     }
@@ -501,7 +509,7 @@ features article {
     }
 
     .faq h2 {
-        width: 100%;
+      width: 100%;
     }
 
    /* TABLET About Page Styles */
@@ -525,11 +533,56 @@ features article {
      justify-content:space-between;
      align-items: flex-start;
    }
-
   }
    @media only screen and (min-width: 1200px) {
    /*Desktop styles here*/
+
+   /* DESKTOP Base Styles */
+   .content-wrapper {
+     max-width: 960px;
    }
+
+   /* DESKTOP Hero Styles */
+
+   .hero-area h1 {
+      width: 60%;
+    }
+
+   /* DESKTOP Newsletter Signup Styles */
+
+   aside .content-wrapper {
+      justify-content: space-around;
+    }
+
+   aside .content-wrapper .form-description,
+   aside .content-wrapper .form {
+     width: 30%;
+   }
+
+   /* DESKTOP Features Styles */
+
+   .features h2 {
+     width: 90%;
+   }
+
+   .features article {
+     flex-basis: 33%;
+   }
+
+   /* DESKTOP Reviews Style */
+
+   .reviews article div {
+     width: 42%;
+   }
+
+   /* DESKTOP About Page Styles */
+
+   .mission h2,
+    .contact-section .content-wrapper h2 {
+        width: 95%;
+    }
+    /* DESKTOP FAQ Page Styles */
+  }
 
 /* ==========================================================================
    Print styles.
