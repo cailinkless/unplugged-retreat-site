@@ -357,8 +357,21 @@ aside {
   flex-flow: row wrap;
 }
 
+.features .features-items article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .features p {
   margin: 0;
+  text-align: center;
+}
+
+.features i {
+	font-size: 3.75em;
+        margin-bottom: 40px;
 }
 
 /***--------REVIEWS STYLES---------***/
